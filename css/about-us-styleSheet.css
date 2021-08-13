@@ -1,0 +1,164 @@
+#side-nav-block{
+    top: 54px;
+}
+
+#all-content{
+    display: block;
+    background-color: white;
+    margin-top: 0;
+    border-radius: 1em;
+}
+
+/* .about{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.border{
+    border-bottom: 3px solid teal;
+    border-radius: 3em;
+    border-width: 3px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    height: 25px;
+}
+.b{
+    border-top: 3px solid teal;
+    
+}
+
+
+
+.about div{
+    margin: 1em;
+    width: 50%;
+    padding: 1em;
+    padding-top: 0.2em;
+}
+
+.who-we-are{
+    border: 5px solid teal;
+    border-radius: 2em;
+    border-top: none;
+    border-left: none;
+}
+
+.our-goals{
+    border: 5px solid teal;
+    border-radius: 2em;
+    border-bottom: none;
+    border-right: none;
+    position: relative;
+    left: 45%;
+}
+
+.about h2{
+    background-image: linear-gradient(to right, white, teal);
+    padding: .5em 0;
+    color: teal;
+}
+
+.about p{
+    text-align: justify;
+    font-size: 1.2rem;
+    color: rgb(0, 53, 53);
+}
+
+.personal-details{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    
+}
+
+.details-tile{
+    background-color: rgba(232, 252, 252, 0.397);
+    width: 25%;
+    border: 3px solid teal;
+    padding: 0.5em;
+    border-radius: 0 2em;
+}
+
+.personal-details h2{
+    color: rgb(0, 61, 61);
+    text-align: center;
+    margin: 0;
+}
+
+.personal-details h3{
+    color: rgb(0, 61, 61);
+    margin: 0.5em;
+}
+
+.personal-details p{
+    color: gray;
+    margin: 0.2em;
+}
+
+.social-media-details{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0;
+    border-radius: inherit;
+}
+
+.social-media-icon{
+    width: 40px;
+}
+
+
+@media(max-width: 800px){
+    .about div{
+        width: 80%;
+    }
+    .our-goals{
+        left: 10%;
+    }
+}
+
+
+@media(max-width: 500px){
+    .about div{
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .about h2{
+        text-align: center;
+        background-image: linear-gradient(to right, white, rgb(30, 156, 156));
+    }
+    
+    .who-we-are{
+        border-right: none;
+    }
+    
+    .our-goals{
+        left: 0;
+        border-left: none;
+    }
+
+    .border{
+        border-width: 3px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        height: 25px;
+    }
+
+    .personal-details{
+        flex-direction: column;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .personal-details div{
+        width: 70%;
+        margin: 1em auto;
+    }
+
+    .personal-details p, h3{
+        text-align: center;
+    }
+    
+}

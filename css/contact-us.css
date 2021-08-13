@@ -1,0 +1,92 @@
+#all-content{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 1em; */
+}
+
+.contact-info{
+    width: 48%;
+    padding: 2em;
+}
+
+.contact-info h1{
+    background-image: linear-gradient(to bottom, rgb(207, 243, 243), white, rgb(179, 243, 243));
+    color: teal;
+    padding: .2em 0;
+}
+
+.contact-info p{
+    font-size: 1.5rem;
+    color: rgb(0, 63, 63);
+}
+
+.contact-form{
+    background-image: linear-gradient(to bottom, white, rgb(229, 250, 250));
+    width: 49%;
+    border: 3px solid teal;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 2em;
+}
+
+.contact-form h1{
+    color: teal;
+}
+
+.name-input{
+    width: 25%;
+    font-size: 1rem;
+    padding: .3em;
+}
+
+.input{
+    width: 53%;
+    font-size: 1rem;
+    padding: .3em;
+}
+
+#discrip{
+    width: 90%;
+    font-size: 1rem;
+}
+
+#contact-submit{
+    background-image: linear-gradient(to right, teal, rgb(139, 219, 219));
+    font-size: 1.1rem;
+    border: none;
+    padding: .5em 1em;
+    border-radius: 5px;
+    color: white;
+    font-weight: 550;
+}
+
+#contact-submit:hover{
+    background-image: linear-gradient(to right, rgb(122, 216, 216), rgb(102, 180, 180));
+}
+
+@media(max-width: 800px){
+    .contact-info, .contact-form{
+        width: 80%;
+        margin: 1em auto;
+    }
+
+}
+
+
+@media(max-width: 500px){
+    .contact-info, .contact-form{
+        width: 90%;
+    }
+
+    .contact-info p{
+        font-size: 1.3rem;
+    }
+
+    .name-input{
+        width: 40%;
+    }
+
+    .input{
+        width: 85%;
+    }
+}
